@@ -1,0 +1,43 @@
+header {
+    background-color: rgb(3, 93, 197);
+    color:#fbfeff;
+    font-family: 'Yuji Mai', serif;
+  }
+  
+  body {
+      background-color: rgb(234, 244, 255);
+  }
+
+  main{
+      background-color:rgb(248, 253, 253);
+      padding: 16px;
+      
+  }
+
+.finstagram-post {
+    margin-bottom: 48px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: rgb(234, 244, 255);
+  }
+  
+  .finstagram-post .user-info img {
+    border-radius: 50%;
+  }
+  
+
+   .photo img{
+    border-radius: 30px;
+  } 
+  
+  body, input{
+    font-family: 'Yuji Mai', serif;
+  }
+
+
+  a.photo{
+    transition: padding 0.5s;
+  }
+  a.photo:hover{
+    padding: 10px;
+  }
