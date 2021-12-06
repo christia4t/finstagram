@@ -1,6 +1,6 @@
 header {
     background-color: rgb(3, 93, 197);
-    color:#fbfeff;
+    color:#ffffff;
     font-family: 'Yuji Mai', serif;
   }
   
@@ -13,6 +13,10 @@ header {
       padding: 16px;
       
   }
+
+ /* .head-col{
+  color:white;
+} */
 
 .finstagram-post {
     margin-bottom: 48px;
@@ -42,7 +46,7 @@ header {
     padding: 10px;
   }
 
-
+/* 
   form{
     border: 2px solid rgb(3, 93, 197);
     margin: 0 auto;
@@ -55,6 +59,6 @@ header {
    margin-left: 40px;
    margin-top: 20px;
    width: 90%;
-  }
+  } */
 
   

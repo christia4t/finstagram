@@ -22,14 +22,22 @@ end
    erb(:login)       #render app/views/login.erb
   end 
 
+
   get '/logout' do
     session[:user_id] = nil
     redirect to('/')
   end
 
+
   get '/finstagram_posts/new' do
-    erb(:"finstagram_posts/new")
-  end
+  @finstagram_post = FinstagramPost.new
+  erb(:"finstagram_posts/new")
+end
+
+get '/finstagram_posts/:id' do
+  @finstagram_post = FinstagramPost.find(params[:id])   # find the finstagram post with the ID from the URL
+  erb(:"finstagram_posts/show")               # render app/views/finstagram_posts/show.erb
+end
 
   
   
@@ -72,6 +80,6 @@ post '/finstagram_posts' do
   if @finstagram_post.save
     redirect(to('/'))
   else
-    @finstagram_post.errors.full_messages.inspect
+    erb(:"finstagram_posts/new")
   end
 end

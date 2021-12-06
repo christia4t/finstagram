@@ -8,10 +8,14 @@ body, input {
   color: #244751;
 }
 
-a {
-  color: #8da7b8;
-  text-decoration: none;
+.head-col{
+  color: white;
 }
+
+ a {
+  color: #fff;
+  text-decoration: none;
+} 
 
 label {
   display: block;
